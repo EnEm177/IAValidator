@@ -54,7 +54,7 @@ These methods must be used to bind all your input, select and textarea elements 
 ```
 
 ### Verify Functions
-These methods must be used to check if the fields are already valid beofre further processing or to explicitly perform validations. 
+These methods must be used to check if the fields are already valid before further processing or to explicitly perform validations. 
 Returns **true** or **false**
 
 * **iaValidator.validateSectionByID(parentID)** - pass the ID of the element which is parent to all fields.
@@ -86,7 +86,7 @@ This attribute must be used to restrict the user's input to definite keys. Below
 * **number** - This will only allow digits in that particular field. **For example - mobile, aadhar, pincode**
 * **alphabets** - This will only allow alphabets in that particular field. **For example - firstName, lastName**
 * **alphanumeric** - This will only allow both alphabets & digits in that particular field but no special character.  
-**For example - PAN, aadhar**
+**For example - PAN**
 * **alphabetSpace** - This will only allow both alphabets & digits & **Space** character in that particular field.
 **For example - fullName**
 
