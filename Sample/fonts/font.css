@@ -1,0 +1,81 @@
+
+@font-face {
+    font-family: 'helveticaneuebold';
+    src: url('helvetica_neu_bold-webfont.woff2') format('woff2'),
+         url('helvetica_neu_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	
+
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('Calibri.eot');
+    src: url('Calibri.eot') format('embedded-opentype'),
+         url('Calibri.woff2') format('woff2'),
+         url('Calibri.woff') format('woff'),
+         url('Calibri.ttf') format('truetype'),
+         url('Calibri.svg#Calibri') format('svg');
+}
+
+@font-face {
+  font-family: 'Calibri-Bold';
+  src:  url('Calibri-Bold.eot?#iefix') format('embedded-opentype'),  
+		url('Calibri-Bold.woff') format('woff'), url('Calibri-Bold.ttf')  format('truetype'), 
+		url('Calibri-Bold.svg#Calibri-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'HelveticaNeueMedium';
+    src: url('HelveticaNeueMedium.eot');
+    src: url('HelveticaNeueMedium.eot') format('embedded-opentype'),
+         url('HelveticaNeueMedium.woff2') format('woff2'),
+         url('HelveticaNeueMedium.woff') format('woff'),
+         url('HelveticaNeueMedium.ttf') format('truetype'),
+         url('HelveticaNeueMedium.svg#HelveticaNeueMedium') format('svg');
+}
+
+
+@font-face {
+    font-family: 'HelveticaNeueLTStdBd';
+    src: url('HelveticaNeueLTStdBd.eot');
+    src: url('HelveticaNeueLTStdBd.eot') format('embedded-opentype'),
+         url('HelveticaNeueLTStdBd.woff2') format('woff2'),
+         url('HelveticaNeueLTStdBd.woff') format('woff'),
+         url('HelveticaNeueLTStdBd.ttf') format('truetype'),
+         url('HelveticaNeueLTStdBd.svg#HelveticaNeueLTStdBd') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTStdBlk';
+    src: url('HelveticaNeueLTStdBlk.eot');
+    src: url('HelveticaNeueLTStdBlk.eot') format('embedded-opentype'),
+         url('HelveticaNeueLTStdBlk.woff2') format('woff2'),
+         url('HelveticaNeueLTStdBlk.woff') format('woff'),
+         url('HelveticaNeueLTStdBlk.ttf') format('truetype'),
+         url('HelveticaNeueLTStdBlk.svg#HelveticaNeueLTStdBlk') format('svg');
+}
+
+@font-face {
+    font-family: 'noto_sansbold';
+    src: url('notosans-bold-webfont.woff2') format('woff2'),
+         url('notosans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'noto_sansregular';
+    src: url('notosans-regular-webfont.woff2') format('woff2'),
+         url('notosans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+

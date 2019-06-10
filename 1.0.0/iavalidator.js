@@ -86,13 +86,13 @@ const checkboxError = 'You must check the box to proceed.';
             address: {
                 presence: {message: "^This field is required"},
                 length: {
-                    maximum: 30,
+                    maximum: 100,
                     message: function(value, attribute, validatorOptions, attributes, globalOptions) {
-                        return this.validate.format("^This field cannot exceed 30 characters", {});
+                        return this.validate.format("^This field cannot exceed 100 characters", {});
                     }
                 },
                 format: {
-                    pattern: /^[A-Za-z0-9\s,\.-]+.$/,
+                    pattern: /^[A-Za-z0-9\s,\.-\/]+.$/,
                     message: function(value, attribute, validatorOptions, attributes, globalOptions) {
                         return this.validate.format("^Some invalid character is entered", {});
                     }
@@ -120,7 +120,7 @@ const checkboxError = 'You must check the box to proceed.';
                 format: {
                     pattern: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
                     message: function(value, attribute, validatorOptions, attributes, globalOptions) {
-                        return this.validate.format("This is not a valid email", {});
+                        return this.validate.format("^This is not a valid email", {});
                     }
                 }
             },
@@ -367,11 +367,11 @@ const checkboxError = 'You must check the box to proceed.';
         },
 
         validateSectionByID  :   function(parentID){
-            this.validateSection('#'+parentID);
+            return this.validateSection('#'+parentID);
         },
 
         validateSectionByClass   :   function(parentsClass){
-            this.validateSection('.'+parentsClass);
+            return this.validateSection('.'+parentsClass);
         },
 
         validateSection :   function(elementSelector){

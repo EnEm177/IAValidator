@@ -9,10 +9,10 @@ IAValidator.js is an open source component of InfoAxon Technologies.
 ### Installing
 Currently only client side javascript version is available.
 
-Download file from [github](https://github.com/EnEm177/IAValidator/blob/master/1.0.0/iavalidator.min.js) and add it your html.
+### Browser/CDN
 
 ```
-<script src="./js/lib/iavalidator.min.js"></script>
+<script src="https://drive.google.com/uc?export=view&id=1Wpqd2sSUZc30YgqFiyk0ERY39a8Fo5Oe"></script>
 ```
 
 ### Dependencies

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="key, words"/>	
+	<meta name="description" content="Website description"/>
+	<meta name="robots" content="noindex, nofollow"/><!-- change into index, follow -->
+	<meta name="format-detection" content="telephone=no" />
+
+	<!-- Mobile Specific Metas ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+	<!-- CSS ================================================== -->
+	<link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="fonts/font.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://drive.google.com/uc?export=view&id=1Wpqd2sSUZc30YgqFiyk0ERY39a8Fo5Oe"></script>	
+</head>
+
+<body>
+
+<!--  / wrapper \ -->
+<section id="wrapper">
+	
+	<!--  / main container \ -->
+	<section id="mainCntr">
+
+<!-- start form box -->
+<div class="formBox">
+	
+	<div class="mid">
+		<h3>Registration Form</h3>
+		<form action="" id="sampleForm">
+			<div class="line">
+				<label class="left">Name</label>
+				
+				<div class="right">
+					<input type="text" data-validation="fullName" data-input="alphabetSpace" maxlength="100" placeholder="Enter your name" class="set">
+				</div>
+			</div>
+			<div class="line">
+				<label class="left">Mobile</label>
+				
+				<div class="right">
+					<input type="tel" id="mobile" data-validation="mobile" maxlength="10" placeholder="Enter your mobile number" class="set">
+				</div>
+			</div>
+			<div class="line">
+				<label class="left">Email</label>
+				
+				<div class="right">
+					<input type="text" data-validation="email" maxlength="100" placeholder="Enter your email id" class="set">
+				</div>
+			</div>
+			<div class="line">
+				<label class="left">City</label>
+				
+				<div class="right">
+					<select name="city" data-validation="required" class="">
+						<option value="">---Select---</option>
+						<option value="Delhi">Delhi</option>
+						<option value="Mumbai">Mumbai</option>
+						<option value="Kolkata">Kolkata</option>
+						<option value="Chennai">Chennai</option>              
+					</select>
+				</div>
+			</div>
+			<div class="line">
+				<label class="left">Gender</label>
+				
+				<div class="right">
+					<label><input type="radio" name="d1" value="male" checked><small>Male</small></label> 
+					<label><input type="radio" name="d1" value="female"><small>Female</small></label>
+				</div>
+			</div>
+			<div class="line">
+				<label class="left">Age</label>
+				
+				<div class="right">
+					<input type="text" data-validation="age"  data-input="number" placeholder="Enter your age" class="set">
+				</div>
+			</div>
+			<div class="line">
+				<label class="left">Vehicle Registration</label>
+				
+				<div class="right">
+					<input type="text" data-validation="regNumber" maxlength="12" placeholder="Enter your registration number" class="set">
+				</div>
+			</div>
+			<div class="line">
+				<label class="left">Date of Birth</label>
+				
+				<div class="right">
+					<input type="text" data-validation="date" placeholder="DD-MM-YYYY" maxlength="10" class="set datepicker">
+				</div>
+			</div>
+			<div class="line">
+				<label class="left">Pincode</label>
+				
+				<div class="right">
+					<input type="text" data-validation="pincode"  data-input="number" maxlength="6" placeholder="Enter your pincode" class="set">
+				</div>
+			</div>
+			<div class="line">
+				<label class="left">PAN</label>
+				
+				<div class="right">
+					<input type="text" data-validation="pan"  data-input="alphanumeric" maxlength="10" placeholder="Enter your PAN" class="set">
+				</div>
+			</div>
+			<div class="line">
+				<label class="left">Aadhar</label>
+				
+				<div class="right">
+					<input type="text" data-validation="aadhar"  data-input="number" maxlength="12" placeholder="Enter your Aadhar" class="set">
+				</div>
+			</div>
+			<div class="line">
+				
+				<div class="right">
+					<label class="left agree">
+						<input type="checkbox" id="terms" data-validation="required" name="d2" value="male"><small>I agree all the Terms & Conditions</small>
+					</label> 
+				</div>
+			</div>
+			<div class="line">
+				<div class="right">
+					<input type="submit" value="Process" class="ok">
+				</div>
+			</div>
+		</form>	
+	</div>
+</div>
+<!-- end form box -->
+
+		
+</section>
+<!--  \ main container / -->
+	
+</section>
+<!--  \ wrapper / -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+	iaValidator.bindElementsValidationByID('sampleForm');
+	$('#sampleForm').submit(function(event){
+		var isValid = false;
+		isValid = iaValidator.validateSectionByID('sampleForm');
+		if(isValid)
+			alert("Form is Valid and ready for processing.")
+		event.preventDefault();
+	});
+});
+</script>
+
+</body>
+
+</html>
