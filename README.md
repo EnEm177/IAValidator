@@ -119,7 +119,9 @@ This attribute must be used to define the type of validation the element must ha
 <input type="text" name="regNumber" data-validation="regNumber" />
 ```
 
-**Note - All the fields become mandatory after applying above validations for now**
+**Note -**
+* **All the fields become mandatory after applying above validations for now**
+* **All the input fields with type="checkbox" can only have data-validation="required"**
 
 ## How To Apply Vaidations
 
